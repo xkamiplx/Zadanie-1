@@ -12,7 +12,7 @@ public class Person {
             }
 
             fullName = value;
-            AktualizujNameIFullname(value);
+            updateNameFullName(value);
         }
     }
     public Person(string fullName){
@@ -44,7 +44,7 @@ public class Person {
             return death_Alive - DateOfBorn.Value;
         }
     }
-    private void AktualizujNameIFullname(string value){
+    private void updateNameFullName(string value){
         if (string.IsNullOrEmpty(value)){
             name = null;
             fullname = null;
